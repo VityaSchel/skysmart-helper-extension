@@ -6,7 +6,7 @@
   "background": {
     "service_worker": "background.js"
   },
-  "permissions": ["tabs", "activeTab", "scripting"],
+  "permissions": ["activeTab"],
   "action": {
     "default_popup": "popup.html",
     "default_icon": {
@@ -17,7 +17,7 @@
     }
   },
   "content_scripts": [{
-    "matches": ["https://edu.skysmart.ru/*"],
+    "matches": ["https://edu.skysmart.ru/lesson/*"],
     "js": ["content.js"],
     "css": ["content.css"],
     "run_at": "document_idle",

@@ -35,6 +35,7 @@ function mapString(data, srcElement) {
 }
 
 function openHTML(){
+  // opens a popup which contains specific task's html code (sent by content.js script back to popup)
   let win = window.open('', 'HTML', 'resizable=yes,scrollbars=yes,width=640,height=480')
   win.document.body.innerHTML = window.taskHTML
 }
