@@ -9,7 +9,8 @@ chrome.runtime.onMessage.addListener((msg, sender, response) => {
       title: document.querySelector('vim-content-section-title').innerText,
       draggable: Array.from(document.querySelectorAll('[uidnddraggabledraggingclass="-dragging"]')).map(dr => dr.innerText.replace('\n', ' ')),
       lists: Array.from(document.querySelectorAll('li')).map(li => li.innerText.replace('\n', ' ')),
-      paragraphs: Array.from(document.querySelectorAll('p')).map(p => p.innerText.replace('\n', ' '))
+      paragraphs: Array.from(document.querySelectorAll('p')).map(p => p.innerText.replace('\n', ' ')),
+      taskHTML: document.querySelector('sky-block-build-content').innerHTML
     };
     response(domInfo);
   }

@@ -4,14 +4,17 @@ const setDOMInfo = info => {
   if(info !== undefined){
     $('#center-warning').style.display = 'none'
     $('#skysmart-content').style.display = 'block'
-    document.getElementById('#title').innerText = info.title;
+    $('#title').innerText = info.title
+    window.taskHTML = info.taskHTML
+    $('#all-html').innerHTML = window.taskHTML
     mapString(info.draggable, '#draggable')
     mapString(info.lists, '#lists')
     mapString(info.paragraphs, '#paragraphs')
-}
+  }
 };
 
 window.addEventListener('DOMContentLoaded', () => {
+  $('#open-html').addEventListener('click', openHTML)
   chrome.tabs.query({
     active: true,
     currentWindow: true
@@ -29,4 +32,9 @@ function mapString(data, srcElement) {
     p.innerText = draggableString
     $(srcElement).appendChild(p)
   })
+}
+
+function openHTML(){
+  let win = window.open('', 'HTML', 'resizable=yes,scrollbars=yes,width=640,height=480')
+  win.document.body.innerHTML = window.taskHTML
 }

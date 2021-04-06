@@ -13,3 +13,8 @@ body {
 #skysmart-content {
   display: none;
 }
+
+#all-html {
+  border: 1px dashed gray;
+  padding: 10px;
+}
