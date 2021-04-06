@@ -35,7 +35,7 @@ chrome://extensions
 
 3. Загрузите распакованное расширение, выбрав скачанный репозиторий как папку с расширением
 
-<img width="100%" src=""></img>
+<img width="100%" src="https://user-images.githubusercontent.com/59040542/113662304-e2506300-96b8-11eb-8058-e4a4d2feaf93.png"></img>
 
 ## Использование
 
