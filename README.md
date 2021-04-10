@@ -17,7 +17,7 @@
 
 ### 1. Скачать из официального магазина расширений Google WebStore (бесплатно)
 
-Пока недоступно
+[Google Chrome WebStore](https://chrome.google.com/webstore/detail/skysmart-helper/jedfnnibgbfgmcjbibkfbjclbicdfoim?hl=ru&authuser=1)
 
 ### 2. Установить свежую версию из этого репозитория
 
